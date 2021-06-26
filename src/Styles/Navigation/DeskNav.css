@@ -1,0 +1,65 @@
+/*Barra de navegacion //  La 'E' significa Escritorio y la  'M' Mobile*/
+.Navbar{
+  z-index: 1;
+  float: left;
+  width: 100%;
+  height:45px;
+  position:fixed;
+  -webkit-transform-origin: left bottom;
+  -webkit-transform:rotate(90deg) translateY(1%) translateX(-40PX);
+}
+.Navbar:hover{
+  transition: margin-left 4s;
+}
+
+/*Comienza  la  barra de navegacion correspondiente a dispositivos de escritorio*/
+
+.NavbarBotonE{
+  align-self: flex-start;
+  -webkit-transform:rotate(180deg) translateY(100%);
+}
+
+.NavbarUlE{
+  display:flex;
+  height: 100%;
+  margin-bottom: 0px;
+  font-size: 25px;
+  background-color: rgba(255, 0, 0, 0);
+  list-style:none;
+  text-decoration: none;
+  padding:5px;
+}
+.NavbarUlE:hover  >  .NavbarLiListE{
+  bottom:0;
+}
+.NavbarLiListE{
+  margin-left: 40px;
+  margin-bottom: 15px;
+  display:flex;
+  position:absolute;
+	bottom:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.NavbarNavLinkE{
+  margin-left:20px;
+  float:left;
+  height:100%;
+  line-height:45px;
+  padding:  0px  15px  0px 15px;
+  height: 100%;
+  color: white;
+  list-style:none;
+  text-decoration: none;
+}
+
+/*Comienza la seccion interactiva con el escritorio*/
+.NavbarLiE:hover  > .NavbarNavLinkE, .NavbarLogoE:hover > .NavbarNavLinkLogoE{
+  color: #61dafb;
+}
+.active {
+  color:    #61dafb;
+}
