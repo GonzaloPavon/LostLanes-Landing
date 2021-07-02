@@ -1,0 +1,58 @@
+
+.container {
+  margin: 15px;
+  display: grid;
+  padding: 2px 16px;
+  grid-template-areas: "title"
+    "body";
+    color: white;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 30px;
+}
+
+.about {
+  grid-area: body;
+  text-align: justify;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-gap: 30px;
+  font-size: 25px;
+  color: bisque;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.location_icon{
+  text-align: center;
+}
+
+.HomeNavLink {
+  text-decoration: none;
+  color: #474d5c;
+  background-color: #57c3de;
+  border-radius: 2px;
+  padding: 14px 20px;
+  margin: 15px 0px 15px 0px;
+  cursor: pointer;
+}
+
+.HomeNavLink:hover {
+  background-color: #efefef;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 3%;
+    grid-column: 1 / 4;
+  }
+
+  .HomeNavLink {
+    font-weight: bold;
+  }
+}

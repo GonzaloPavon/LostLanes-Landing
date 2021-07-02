@@ -1,0 +1,191 @@
+.TheProjectScreen{
+  width: 100%;
+  height: 100%;
+  margin: 5%  auto;
+  margin-top: 0px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: repeat(7,  1fr);
+  color: #efefef;
+  background-color: black;
+  animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.HomeProject{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TheProjectSection{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+iframe{
+  width: 100%;
+}
+.SectionContainer{
+  display: grid;
+  grid-template-columns: repeat(2,  1fr);
+  grid-gap: 5%;
+  margin: 5%;
+  align-items:flex-end;
+}
+.backgroundImages03{
+  background-image: url("../Assets/TheProject/Finales/SplashArt_Theproject_02_Desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.backgroundImages04{
+  background-image: url("../Assets/TheProject/Finales/SplashArt_Theproject_03_Desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.cornerText{
+  font-style: italic;
+  font-size: 35px;
+  letter-spacing: 5px;
+  position: absolute;
+  margin-left: 5%;
+}
+.RightSide{
+  margin-right: 20px;
+}
+.MarksGroup{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.Marks_Assets{
+  height: 500px;
+}
+.VideoContainer{
+  margin-top: 20px;
+}
+.FacesGroup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Faces{
+  width: 50%;
+}
+.centerTextTitle{
+  grid-area: centerTextTitle;
+}
+.centerTextBody  {
+  grid-area: centerTextBody;
+  text-align: center;
+  width: 50%;
+}
+.centerTextContainer{
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  padding: 2px 16px;
+  grid-template-areas: "centerTextTitle"
+                       "centerTextBody";
+}
+.SponsorsSection{
+  margin-top: 50px;
+  grid-gap: 15px;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  grid-template-areas: "TitleSponsor"
+                       "BrandSponsors"
+                       "ButtonSponsors";
+}
+.TitleSponsor{
+  color: grey;
+  grid-area: TitleSponsor;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 35px;
+}
+.BrandSponsors{
+  grid-area: BrandSponsors;
+}
+.ButtonSponsors{
+  grid-area: ButtonSponsors;
+}
+.ButtonSponsors  > button{
+  font-family: inherit;
+  padding: 10px;
+  font-size: 35px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+}
+a{
+  list-style:none;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .TheProjectScreen{
+    margin: 5%  auto;
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 150px;
+    grid-template-rows: 0.65fr  0.5fr  0.5fr  0.5fr  0.5fr  0.5fr  1fr;
+  }
+  .backgroundImages03{
+    background-image: url("../Assets/TheProject/Finales/SplashArt_Theproject_02_Mobile.jpg");
+    background-position: center;
+  }
+  .backgroundImages04{
+    background-image: url("../Assets/TheProject/Finales/SplashArt_Theproject_03_Mobile.jpg");
+    background-position: center;
+  }
+  .SectionContainer{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  .Marks_Assets{
+    width: 90%;
+  }
+  .Faces{
+    width: 95%;
+  }
+  .SponsorsSection{
+    grid-gap:5px;
+  }
+  .TitleSponsor{
+    margin-bottom: 30px;
+  }
+  .ButtonSponsors{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .BrandSponsors{
+    height: 50%;
+  }
+  .Brand{
+    height:127px;
+    width:127px;
+  }
+  .ButtonSponsors{
+    margin-top: -100px;
+  }
+}

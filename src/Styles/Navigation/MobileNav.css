@@ -1,0 +1,90 @@
+/*Comienza  la  barra de navegacion correspondiente a dispositivos moviles*/
+.NavbarUlM{
+  padding-left: 15px;
+  display: none;
+  height: 100%;
+  margin-top: -10px;
+  font-size: 25px;
+  list-style:none;
+  text-decoration: none;
+  width: 100%;
+}
+.NavbarMenuM{
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+  font-size: 20px;
+  align-items: center;
+}
+.NavbarLogoM, .NavbarNavLinkM{
+  float:left;
+  height:100%;
+  line-height:45px;
+  padding:  0px  15px  0px 15px;
+  height: 100%;
+  color: white;
+  list-style:none;
+  text-decoration: none;
+}
+.iconMenu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+}
+.NavbarLiListM{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .5);
+  display:flex;
+  position:absolute;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.NavbarLiM{
+  margin-left: 5%;
+  list-style:none;
+  text-decoration: none;
+}
+.NavbarNavLinkM{
+  margin-right:20px;
+  float:right;
+  height:100%;
+  line-height:45px;
+  padding:  0px  15px  0px 15px;
+  height: 100%;
+  color: white;
+  list-style:none;
+  text-decoration: none;
+}
+.NavbarBotonM{
+  align-self: flex-start;
+  -webkit-transform:rotate(180deg) translateY(0%);
+}
+/*Responsive*/
+@media only screen and (max-width: 755px){
+  .Navbar{
+    margin: 0px;
+    padding: 0px;
+  }
+  .NavbarUlE{
+    display: none;
+  }
+  .NavbarUlM{
+    display: block;
+  }
+  .active{
+    color:    #61dafb;
+    border-bottom: 0px  solid    #61dafb;
+  }
+  .NavbarBotonE{
+    display: none;
+  }
+}
+@media only screen and (max-width: 755px){
+    .footer-content-terminos{
+    font-size: 15px;
+  }
+}

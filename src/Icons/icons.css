@@ -1,0 +1,42 @@
+/*Configuracion de los iconos*/
+.iconMenu {
+  margin: 5px;
+  height: 48px;
+  width: 48px;
+  border: none;
+  cursor: pointer;
+  background: url("./Menu.svg") no-repeat top left;
+  background-size: contain;
+}
+.ButtonIcon{
+  border-radius: 5px;
+  border:0px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0)
+}
+.ButtonIcon:hover  >  #Menu-icon  polyline{
+  stroke:#57c3de;
+  fill:#57c3de;
+}
+.ButtonIcon:hover  >  #Menu-icon  polygon{
+  stroke:#57c3de;
+  fill:#57c3de;
+}
+.ButtonIcon:hover  >  #Menu-icon  rect{
+  stroke:#57c3de;
+  fill:#57c3de;
+}
+.ButtonIcon:hover  >  #Menu-icon  line{
+  stroke:#57c3de;
+  fill:#57c3de;
+}
+.ButtonIcon  >  #Arrow-Menu-icon  polyline{
+  stroke:white;
+}
+.ButtonIcon:hover  >  #Arrow-Menu-icon  polyline{
+  stroke:#57c3de;
+}
