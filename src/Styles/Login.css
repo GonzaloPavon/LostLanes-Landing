@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 25% auto;
+    margin-top: 0px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    color: #efefef;
+    background-image: url("../Assets/Backgrounds/lighthouse.jpg");
+    background-size: cover;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.register {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_input {
+    width: 300px;
+    padding: 5px;
+    margin: 10px 20px;
+    font-size: 22px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 10px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form_input_submit {
+    transform: translate(100%);
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+#btn_sign,
+#btn_back_login {
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+#btn_back_login {
+    width: 150px;
+    height: 30px;
+}
+
+input:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+input:hover,
+#btn_sign:hover,
+#btn_back_login:hover {
+    border: 1px solid yellow;
+}

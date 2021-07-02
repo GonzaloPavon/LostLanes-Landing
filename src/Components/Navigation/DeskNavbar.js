@@ -24,6 +24,7 @@ class DeskNavbar  extends Component{
             <li className="NavbarLiE"><NavLink to="/about" className='NavbarNavLinkE'>About</NavLink></li>
             <li className="NavbarLiE"><NavLink to="/gallery" className='NavbarNavLinkE'>Gallery</NavLink></li>
             <li className="NavbarLiE"><NavLink to="/news" className='NavbarNavLinkE'>News</NavLink></li>
+            <li className="NavbarLiE"><NavLink to="/login" className='NavbarNavLinkE'>Login</NavLink></li>
           </div>
         </ul>
         <ul className="NavbarUlM">

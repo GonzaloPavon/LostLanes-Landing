@@ -7,6 +7,7 @@ import './App.css';
 import  './Styles/CssMaster.css';
 import  './Icons/icons.css';
 import  './Styles/About.css';
+import  './Styles/Login.css';
 
 //Sections
 import DeskNavbar from './Components/Navigation/DeskNavbar';
@@ -16,6 +17,7 @@ import About from './Components/Sections/About';
 import Gallery from './Components/Sections/Gallery';
 import News from './Components/Sections/News';
 import Footer from './Components/Sections/Footer';
+import Login from './Components/Sections/Login';
 
 //Componente
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <Route  path='/about'  component={About}/>
           <Route  path='/gallery'  component={Gallery}/>
           <Route  path='/news'  component={News}/>
+          <Route  path='/login'  component={Login}/>
       </div>
       <Footer/>
     </Router>
