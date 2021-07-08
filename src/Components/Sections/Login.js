@@ -1,12 +1,31 @@
 import React, { Component } from 'react';
 
+window.onload = start;
+
+function start() {
+    document.getElementById("btn_sign").onclick = mostrarRegister;
+    document.getElementById("register").style.visibility = "hidden";
+    document.getElementById("btn_back_login").onclick = mostrarLogin;
+}
+
+function mostrarRegister() {
+    document.getElementById("register").style.visibility = "visible";
+    document.getElementById("login").style.visibility = "hidden";
+}
+
+function mostrarLogin() {
+    document.getElementById("register").style.visibility = "hidden";
+    document.getElementById("login").style.visibility = "visible";
+}
+
 class Login extends Component {
+
     render() {
+
         return (
             <div className="container">
 
-                <div className="login">
-
+                <div className="login" id="login">
                     <form className="form_login">
                         <input type="text" placeholder="Username" class="form_input" required />
                         <button id="btn_sign">Sign up</button>
@@ -15,8 +34,7 @@ class Login extends Component {
                     </form>
                 </div>
 
-                <div className="register">
-
+                <div className="register" id="register">
                     <form className="form_register">
                         <input type="text" placeholder="Set Username" class="form_input" required />
                         <button id="btn_back_login">Back to Login</button>
@@ -26,10 +44,6 @@ class Login extends Component {
                     </form>
                 </div>
             </div>
-
-
-
-
         )
     }
 }
