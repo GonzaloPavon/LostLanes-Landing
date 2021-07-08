@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-window.onload = start;
+/*-window.onload = start;
 
 function start() {
     document.getElementById("btn_sign").onclick = mostrarRegister;
@@ -17,13 +17,13 @@ function mostrarLogin() {
     document.getElementById("register").style.visibility = "hidden";
     document.getElementById("login").style.visibility = "visible";
 }
-
+*/
 class Login extends Component {
 
     render() {
 
         return (
-            <div className="container">
+            <div className="containerLogin">
 
                 <div className="login" id="login">
                     <form className="form_login">
